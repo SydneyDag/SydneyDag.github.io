@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 4</title>
+
+    <script type="text/javascript">
+        window.alert("Hello! Welcome to the Store.");
+        
+        var name = window.prompt("What is your name?", "Josh");
+        var item = window.prompt("What item are you buying?", "Banana");
+        var quantity = window.prompt("How many will you be buying?", "12");
+    
+        var now = new Date();
+        var hour = now.getHours();
+    
+        if (hour < 12) {
+            document.write("<h1>Good Morning, " + name + "</h1><h1>Thank you for ordering!</h1>");
+        } else if (hour < 18) {
+            document.write("<h1>Good Afternoon, " + name + "</h1><h1>Thank you for ordering!</h1>");
+        } else {
+            document.write("<h1>Good Evening, " + name + "</h1><h1>Thank you for ordering!</h1>");
+        }
+    
+        document.write("<h2>Name: " + name + "</h2>");
+        document.write("<h2>Item: " + item + "</h2>");
+        document.write("<h2>Quantity: " + quantity + "</h2>");
+    
+        now.setDate(now.getDate() + 7);
+        document.write("<h3>You can expect your delivery on " + now.toDateString() + "</h3>");
+    
+    </script>    
+
+</head>
+<body>
+    
+</body>
+</html>
