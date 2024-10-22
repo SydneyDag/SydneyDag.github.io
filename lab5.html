@@ -31,6 +31,10 @@
             background-color:#5C2D73 !important;
             border-color:#5C2D73 !important;
         }
+
+        .error{
+            color:red;
+        }
     </style>
 
     <script type="text/javascript">
@@ -78,7 +82,7 @@
         user.password = maskPassword(password);
 
         resultDiv.innerHTML = `
-            <p class='success'>Registration Successful</p>
+            <p>Registration Successful</p>
             <p><strong>First Name:</strong> ${user.firstName}</p>
             <p><strong>Last Name:</strong> ${user.lastName}</p>
             <p><strong>Email:</strong> ${user.email}</p>
