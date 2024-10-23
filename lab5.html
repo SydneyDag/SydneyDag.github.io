@@ -40,8 +40,14 @@
     <script type="text/javascript">
 
         function validatePassword(password) {
-        specialChars = /[!?]/;
-        return specialChars.test(password);
+
+            for(var i = 0;i<password.length();i++ ){
+                if(password[i] == '!' || password[i] == '?'){
+                    return true;
+                }
+            }
+
+            return false;
         }
 
         function validateForm(firstName, lastName, email, password, dob) {
